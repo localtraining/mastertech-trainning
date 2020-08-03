@@ -20,9 +20,9 @@ public class Control {
     public Control() {
     }
 
-    public Control(Long doorId, Long customerId) {
-        this.doorId = doorId;
+    public Control(Long customerId, Long doorId) {
         this.customerId = customerId;
+        this.doorId = doorId;
     }
 
     public Long getId() {

@@ -2,6 +2,7 @@ package br.com.access.control.controlmicroservice.service;
 
 import br.com.access.control.controlmicroservice.client.CustomerClient;
 import br.com.access.control.controlmicroservice.client.DoorClient;
+import br.com.access.control.controlmicroservice.exception.ControlNotFoundException;
 import br.com.access.control.controlmicroservice.exception.CustomerNotFoundException;
 import br.com.access.control.controlmicroservice.exception.DoorNotFoundException;
 import br.com.access.control.controlmicroservice.model.Control;
@@ -22,19 +23,32 @@ public class ControlService {
     @Autowired
     private DoorClient doorClient;
 
-    public Control grant(Control control) {
-        return controlRepository.save(findCustomer(control));
-    }
-
     public Control get(Long customerId, Long doorId) {
-        return controlRepository.findByCustomerIdAndDoorId(customerId, doorId);
+        return controlRepository.findByCustomerIdAndDoorId(customerId, doorId).orElseThrow(ControlNotFoundException::new);
     }
 
-    private Control findCustomer(Control control) {
-        Customer customer = customerClient.find(control.getCustomerId()).orElseThrow(CustomerNotFoundException::new);
+    public void delete(Long customerId, Long doorId) {
+        Control control = controlRepository.findByCustomerIdAndDoorId(customerId, doorId).orElseThrow(ControlNotFoundException::new);
 
-        Door door = doorClient.find(control.getDoorId()).orElseThrow(DoorNotFoundException::new);
+        controlRepository.delete(control);
+    }
 
-        return new Control(customer.getId(), door.getId());
+    public Control grant(Control control) {
+        return controlRepository.save(findCustomerAndDoor(control.getCustomerId(), control.getDoorId()));
+    }
+
+    private Control findCustomerAndDoor(Long customerId, Long doorId) {
+        Customer customer = customerClient.find(customerId).orElseThrow(CustomerNotFoundException::new);
+
+        Door door = doorClient.find(doorId).orElseThrow(DoorNotFoundException::new);
+
+        Control control = new Control(customer.getId(), door.getId());
+
+        controlRepository.findByCustomerIdAndDoorId(control.getCustomerId(), control.getDoorId()).ifPresent(
+                foundControl -> {
+                    control.setId(foundControl.getId());
+                });
+
+        return control;
     }
 }
