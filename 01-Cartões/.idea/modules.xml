@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mastertech.iml" filepath="$PROJECT_DIR$/.idea/Mastertech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/creditcard-microservice/creditcard-microservice.iml" filepath="$PROJECT_DIR$/creditcard-microservice/creditcard-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/creditcard-transactions/creditcard-transactions.iml" filepath="$PROJECT_DIR$/creditcard-transactions/creditcard-transactions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/customer-microservice/customer-microservice.iml" filepath="$PROJECT_DIR$/customer-microservice/customer-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/payment-microservice/payment-microservice.iml" filepath="$PROJECT_DIR$/payment-microservice/payment-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/working-time/working-time.iml" filepath="$PROJECT_DIR$/working-time/working-time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-api-gateway/zuul-api-gateway.iml" filepath="$PROJECT_DIR$/zuul-api-gateway/zuul-api-gateway.iml" />
+    </modules>
+  </component>
+</project>

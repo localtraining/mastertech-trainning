@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mastertech.iml" filepath="$PROJECT_DIR$/.idea/Mastertech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cartões/cartoes-monolith/cartoes-monolith.iml" filepath="$PROJECT_DIR$/Cartões/cartoes-monolith/cartoes-monolith.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cartões/config-server/config.iml" filepath="$PROJECT_DIR$/Cartões/config-server/config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cartões/creditcard-microservice/creditcard-microservice.iml" filepath="$PROJECT_DIR$/Cartões/creditcard-microservice/creditcard-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cartões/creditcard-transactions/creditcard-transactions.iml" filepath="$PROJECT_DIR$/Cartões/creditcard-transactions/creditcard-transactions.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cartões/customer-microservice/customer-microservice.iml" filepath="$PROJECT_DIR$/Cartões/customer-microservice/customer-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cartões/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/Cartões/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cartões/payment-microservice/payment-microservice.iml" filepath="$PROJECT_DIR$/Cartões/payment-microservice/payment-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cartões/working-time/working-time.iml" filepath="$PROJECT_DIR$/Cartões/working-time/working-time.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Cartões/zuul-api-gateway/zuul.iml" filepath="$PROJECT_DIR$/Cartões/zuul-api-gateway/zuul.iml" />
+    </modules>
+  </component>
+</project>

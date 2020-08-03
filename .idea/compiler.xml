@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="creditcard-microservice" />
+        <module name="working-time" />
+        <module name="creditcard-transactions" />
+        <module name="cartoes-monolith" />
+        <module name="customer-microservice" />
+        <module name="zuul" />
+        <module name="config" />
+        <module name="eureka-server" />
+        <module name="payment-microservice" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cartoes-monolith" target="1.8" />
+      <module name="config" target="1.8" />
+      <module name="creditcard-microservice" target="1.8" />
+      <module name="creditcard-transactions" target="11" />
+      <module name="customer-microservice" target="1.8" />
+      <module name="eureka-server" target="1.8" />
+      <module name="payment-microservice" target="1.8" />
+      <module name="working-time" target="11" />
+      <module name="zuul" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cartoes-monolith" options="-parameters" />
+      <module name="config" options="-parameters" />
+      <module name="creditcard-microservice" options="-parameters" />
+      <module name="creditcard-transactions" options="-parameters" />
+      <module name="customer-microservice" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="payment-microservice" options="-parameters" />
+      <module name="working-time" options="-parameters" />
+      <module name="zuul" options="-parameters" />
+    </option>
+  </component>
+</project>
