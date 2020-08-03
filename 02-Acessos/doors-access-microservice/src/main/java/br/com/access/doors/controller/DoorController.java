@@ -28,7 +28,7 @@ public class DoorController {
         return doorMapper.toDoorResponse(door);
     }
 
-    @GetMapping(value="/{id}")
+    @GetMapping(value="/{doorId}")
     public DoorResponse findDoor(@PathVariable Long doorId) {
         return doorMapper.toDoorResponse(doorService.findDoorById(doorId));
     }

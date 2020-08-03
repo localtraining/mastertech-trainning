@@ -16,6 +16,11 @@
         <module name="config" />
         <module name="eureka-server" />
         <module name="payment-microservice" />
+      </profile>
+      <profile name="Annotation profile for customer" enabled="true">
+        <sourceOutputDir name="../customer/target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../customer/target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
         <module name="customers-access-microservice" />
       </profile>
     </annotationProcessing>

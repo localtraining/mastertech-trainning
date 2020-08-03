@@ -11,7 +11,7 @@ public class NewDoorRequest {
     private String floor;
 
     @JsonProperty("sala")
-    @Size(min = 6)
+    @Size(min = 5)
     private String room;
 
     public String getFloor() {
