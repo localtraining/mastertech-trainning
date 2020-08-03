@@ -2,10 +2,13 @@ package br.com.access.control.controlmicroservice.controller;
 
 import br.com.access.control.controlmicroservice.model.Control;
 import br.com.access.control.controlmicroservice.model.ControlMapper;
+import br.com.access.control.controlmicroservice.model.dto.ControlRequest;
 import br.com.access.control.controlmicroservice.model.dto.ControlResponse;
 import br.com.access.control.controlmicroservice.service.ControlService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/acesso")
@@ -17,7 +20,9 @@ public class ControlController {
     private ControlMapper controlMapper;
 
     @PostMapping
-    public ControlResponse create(Control control) {
+    public ControlResponse create(@Valid @RequestBody ControlRequest controlRequest) {
+        Control control = controlMapper.fromControlRequset(controlRequest);
+
         return controlMapper.toControlResponse(controlService.grant(control));
     }
 

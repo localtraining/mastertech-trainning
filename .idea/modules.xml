@@ -14,7 +14,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/payment-microservice/payment-microservice.iml" filepath="$PROJECT_DIR$/01-Cartões/payment-microservice/payment-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cartões/working-time/working-time.iml" filepath="$PROJECT_DIR$/Cartões/working-time/working-time.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zuul-api-gateway/zuul.iml" filepath="$PROJECT_DIR$/zuul-api-gateway/zuul.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-api-gateway/zuul-api-gatewau.iml" filepath="$PROJECT_DIR$/zuul-api-gateway/zuul-api-gatewau.iml" />
     </modules>
   </component>
 </project>

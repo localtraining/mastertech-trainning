@@ -9,12 +9,12 @@
         <module name="creditcard-microservice" />
         <module name="working-time" />
         <module name="creditcard-transactions" />
+        <module name="config-server" />
+        <module name="zuul-api-gateway" />
         <module name="control-microservice" />
         <module name="cartoes-monolith" />
         <module name="customer-microservice" />
         <module name="doors-access-microservice" />
-        <module name="zuul" />
-        <module name="config" />
         <module name="eureka-server" />
         <module name="payment-microservice" />
         <module name="customers-access-microservice" />
@@ -22,7 +22,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="cartoes-monolith" target="1.8" />
-      <module name="config" target="1.8" />
+      <module name="config-server" target="1.8" />
       <module name="control-microservice" target="1.8" />
       <module name="creditcard-microservice" target="1.8" />
       <module name="creditcard-transactions" target="11" />
@@ -32,13 +32,13 @@
       <module name="eureka-server" target="1.8" />
       <module name="payment-microservice" target="1.8" />
       <module name="working-time" target="11" />
-      <module name="zuul" target="1.8" />
+      <module name="zuul-api-gateway" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cartoes-monolith" options="-parameters" />
-      <module name="config" options="-parameters" />
+      <module name="config-server" options="-parameters" />
       <module name="control-microservice" options="-parameters" />
       <module name="creditcard-microservice" options="-parameters" />
       <module name="creditcard-transactions" options="-parameters" />
@@ -48,7 +48,7 @@
       <module name="eureka-server" options="-parameters" />
       <module name="payment-microservice" options="-parameters" />
       <module name="working-time" options="-parameters" />
-      <module name="zuul" options="-parameters" />
+      <module name="zuul-api-gateway" options="-parameters" />
     </option>
   </component>
 </project>
