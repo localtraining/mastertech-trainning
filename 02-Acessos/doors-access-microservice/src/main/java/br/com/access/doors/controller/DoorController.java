@@ -22,14 +22,14 @@ public class DoorController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public DoorResponse createDoor(@Valid @RequestBody NewDoorRequest newDoorRequest) {
+    public DoorResponse create(@Valid @RequestBody NewDoorRequest newDoorRequest) {
         Door door = doorService.createDoor(doorMapper.fromDoorRequest(newDoorRequest));
 
         return doorMapper.toDoorResponse(door);
     }
 
     @GetMapping(value="/{doorId}")
-    public DoorResponse findDoor(@PathVariable Long doorId) {
+    public DoorResponse find(@PathVariable Long doorId) {
         return doorMapper.toDoorResponse(doorService.findDoorById(doorId));
     }
 }

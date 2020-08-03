@@ -17,7 +17,7 @@ public class CustomerMapper {
         CustomerResponse customerResponse = new CustomerResponse();
 
         customerResponse.setId(customer.getId());
-        customer.setName(customer.getName());
+        customerResponse.setName(customer.getName());
 
         return customerResponse;
     }

@@ -9,6 +9,7 @@
         <module name="creditcard-microservice" />
         <module name="working-time" />
         <module name="creditcard-transactions" />
+        <module name="control-microservice" />
         <module name="cartoes-monolith" />
         <module name="customer-microservice" />
         <module name="doors-access-microservice" />
@@ -22,6 +23,7 @@
     <bytecodeTargetLevel>
       <module name="cartoes-monolith" target="1.8" />
       <module name="config" target="1.8" />
+      <module name="control-microservice" target="1.8" />
       <module name="creditcard-microservice" target="1.8" />
       <module name="creditcard-transactions" target="11" />
       <module name="customer-microservice" target="1.8" />
@@ -37,6 +39,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cartoes-monolith" options="-parameters" />
       <module name="config" options="-parameters" />
+      <module name="control-microservice" options="-parameters" />
       <module name="creditcard-microservice" options="-parameters" />
       <module name="creditcard-transactions" options="-parameters" />
       <module name="customer-microservice" options="-parameters" />
