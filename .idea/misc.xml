@@ -20,6 +20,8 @@
         <option value="$PROJECT_DIR$/01-Cartões/creditcard-transactions/pom.xml" />
         <option value="$PROJECT_DIR$/01-Cartões/customer-microservice/pom.xml" />
         <option value="$PROJECT_DIR$/01-Cartões/payment-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/02-Acessos/door/pom.xml" />
+        <option value="$PROJECT_DIR$/02-Acessos/customer/pom.xml" />
       </list>
     </option>
   </component>

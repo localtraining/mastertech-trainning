@@ -11,10 +11,12 @@
         <module name="creditcard-transactions" />
         <module name="cartoes-monolith" />
         <module name="customer-microservice" />
+        <module name="doors-access-microservice" />
         <module name="zuul" />
         <module name="config" />
         <module name="eureka-server" />
         <module name="payment-microservice" />
+        <module name="customers-access-microservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -23,6 +25,8 @@
       <module name="creditcard-microservice" target="1.8" />
       <module name="creditcard-transactions" target="11" />
       <module name="customer-microservice" target="1.8" />
+      <module name="customers-access-microservice" target="1.8" />
+      <module name="doors-access-microservice" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="payment-microservice" target="1.8" />
       <module name="working-time" target="11" />
@@ -36,6 +40,8 @@
       <module name="creditcard-microservice" options="-parameters" />
       <module name="creditcard-transactions" options="-parameters" />
       <module name="customer-microservice" options="-parameters" />
+      <module name="customers-access-microservice" options="-parameters" />
+      <module name="doors-access-microservice" options="-parameters" />
       <module name="eureka-server" options="-parameters" />
       <module name="payment-microservice" options="-parameters" />
       <module name="working-time" options="-parameters" />

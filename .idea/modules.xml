@@ -8,6 +8,8 @@
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/creditcard-microservice/creditcard-microservice.iml" filepath="$PROJECT_DIR$/01-Cartões/creditcard-microservice/creditcard-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/creditcard-transactions/creditcard-transactions.iml" filepath="$PROJECT_DIR$/01-Cartões/creditcard-transactions/creditcard-transactions.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/customer-microservice/customer-microservice.iml" filepath="$PROJECT_DIR$/01-Cartões/customer-microservice/customer-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-Acessos/customers-access-microservice/customers-access-microservice.iml" filepath="$PROJECT_DIR$/02-Acessos/customers-access-microservice/customers-access-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-Acessos/doors-access-microservice/doors-access-microservice.iml" filepath="$PROJECT_DIR$/02-Acessos/doors-access-microservice/doors-access-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/payment-microservice/payment-microservice.iml" filepath="$PROJECT_DIR$/01-Cartões/payment-microservice/payment-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cartões/working-time/working-time.iml" filepath="$PROJECT_DIR$/Cartões/working-time/working-time.iml" />
