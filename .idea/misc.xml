@@ -24,6 +24,8 @@
         <option value="$PROJECT_DIR$/02-Acessos/control-microservice/pom.xml" />
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/03-Messageria/capital/pom.xml" />
+        <option value="$PROJECT_DIR$/03-Messageria/capital-company-validation-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/03-Messageria/capital-company-create-microservice/pom.xml" />
       </list>
     </option>
   </component>

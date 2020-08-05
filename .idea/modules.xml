@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Mastertech.iml" filepath="$PROJECT_DIR$/.idea/Mastertech.iml" />
-      <module fileurl="file://$PROJECT_DIR$/03-Messageria/capital/capital.iml" filepath="$PROJECT_DIR$/03-Messageria/capital/capital.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-Messageria/capital-company-create-microservice/capital-company-create-microservice.iml" filepath="$PROJECT_DIR$/03-Messageria/capital-company-create-microservice/capital-company-create-microservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/03-Messageria/capital-company-validate-microservice/capital-company-validate-microservice.iml" filepath="$PROJECT_DIR$/03-Messageria/capital-company-validate-microservice/capital-company-validate-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/cartoes-monolith/cartoes-monolith.iml" filepath="$PROJECT_DIR$/01-Cartões/cartoes-monolith/cartoes-monolith.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-Acessos/control-microservice/control-microservice.iml" filepath="$PROJECT_DIR$/02-Acessos/control-microservice/control-microservice.iml" />
