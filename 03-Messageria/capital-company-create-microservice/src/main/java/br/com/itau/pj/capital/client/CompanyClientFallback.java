@@ -1,7 +1,7 @@
 package br.com.itau.pj.capital.client;
 
 import br.com.itau.pj.capital.exception.CompanyServiceOfflineException;
-import br.com.itau.pj.capital.model.dto.Company;
+import br.com.itau.pj.capital.producer.Company;
 
 import java.util.Optional;
 

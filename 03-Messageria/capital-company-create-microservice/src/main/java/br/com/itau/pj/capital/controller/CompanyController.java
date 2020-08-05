@@ -1,6 +1,6 @@
 package br.com.itau.pj.capital.controller;
 
-import br.com.itau.pj.capital.model.dto.Company;
+import br.com.itau.pj.capital.producer.Company;
 import br.com.itau.pj.capital.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

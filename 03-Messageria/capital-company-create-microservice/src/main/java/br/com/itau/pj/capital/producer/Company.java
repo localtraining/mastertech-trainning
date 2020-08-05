@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.model.dto;
+package br.com.itau.pj.capital.producer;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
