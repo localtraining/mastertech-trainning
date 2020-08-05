@@ -8,6 +8,8 @@ import br.com.access.control.controlmicroservice.exception.DoorNotFoundException
 import br.com.access.control.controlmicroservice.model.Control;
 import br.com.access.control.controlmicroservice.model.Customer;
 import br.com.access.control.controlmicroservice.model.Door;
+import br.com.access.control.controlmicroservice.producer.AccessLoggerMapper;
+import br.com.access.control.controlmicroservice.producer.AccessProducer;
 import br.com.access.control.controlmicroservice.repository.ControlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -23,8 +25,18 @@ public class ControlService {
     @Autowired
     private DoorClient doorClient;
 
+    @Autowired
+    private AccessProducer accessProducer;
+
+    @Autowired
+    private AccessLoggerMapper accessLoggerMapper;
+
     public Control get(Long customerId, Long doorId) {
-        return controlRepository.findByCustomerIdAndDoorId(customerId, doorId).orElseThrow(ControlNotFoundException::new);
+        Control control = controlRepository.findByCustomerIdAndDoorId(customerId, doorId).orElseThrow(ControlNotFoundException::new);
+
+        accessProducer.sendKafkaLogMessage(accessLoggerMapper.fromControl(control));
+
+        return control;
     }
 
     public void delete(Long customerId, Long doorId) {

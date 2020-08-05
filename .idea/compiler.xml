@@ -19,7 +19,6 @@
         <module name="customer-microservice" />
         <module name="doors-access-microservice" />
         <module name="producer" />
-        <module name="config" />
         <module name="consumer" />
         <module name="customers-access-microservice" />
       </profile>
@@ -46,6 +45,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="cartoes-monolith" options="-parameters" />
+      <module name="config" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="consumer" options="-parameters" />
       <module name="control-microservice" options="-parameters" />

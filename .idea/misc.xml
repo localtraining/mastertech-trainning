@@ -12,7 +12,6 @@
         <option value="$PROJECT_DIR$/Cartões/customer-microservice/pom.xml" />
         <option value="$PROJECT_DIR$/Cartões/creditcard-microservice/pom.xml" />
         <option value="$PROJECT_DIR$/Cartões/creditcard-transactions/pom.xml" />
-        <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/zuul-api-gateway/pom.xml" />
         <option value="$PROJECT_DIR$/01-Cartões/cartoes-monolith/pom.xml" />
@@ -25,6 +24,7 @@
         <option value="$PROJECT_DIR$/02-Acessos/control-microservice/pom.xml" />
         <option value="$PROJECT_DIR$/03-Messageria/producer/pom.xml" />
         <option value="$PROJECT_DIR$/03-Messageria/consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/config-server/pom.xml" />
       </list>
     </option>
   </component>
