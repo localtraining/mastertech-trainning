@@ -15,8 +15,7 @@
     <file url="file://$PROJECT_DIR$/02-Acessos/control-microservice/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/02-Acessos/customers-access-microservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/02-Acessos/doors-access-microservice/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/03-Messageria/consumer/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/03-Messageria/producer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/03-Messageria/capital/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />

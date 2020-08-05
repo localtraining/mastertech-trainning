@@ -1,5 +1,7 @@
 package br.com.access.control.controlmicroservice.producer;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import java.time.LocalDateTime;
 
 public class AccessLog {
@@ -32,6 +34,7 @@ public class AccessLog {
     }
 
     @Override
+    @JsonIgnore
     public String toString() {
         return "AccessLog {" +
                 "accessTime=" + accessTime +

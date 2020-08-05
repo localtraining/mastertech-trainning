@@ -10,6 +10,7 @@
         <module name="working-time" />
         <module name="creditcard-transactions" />
         <module name="zuul-api-gatewau" />
+        <module name="capital" />
         <module name="zuul-api-gateway" />
         <module name="control-microservice" />
         <module name="cartoes-monolith" />
@@ -18,12 +19,11 @@
         <module name="config-server" />
         <module name="customer-microservice" />
         <module name="doors-access-microservice" />
-        <module name="producer" />
-        <module name="consumer" />
         <module name="customers-access-microservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="capital" target="1.8" />
       <module name="cartoes-monolith" target="1.8" />
       <module name="config" target="1.8" />
       <module name="config-server" target="1.8" />
@@ -44,6 +44,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="capital" options="-parameters" />
       <module name="cartoes-monolith" options="-parameters" />
       <module name="config" options="-parameters" />
       <module name="config-server" options="-parameters" />
