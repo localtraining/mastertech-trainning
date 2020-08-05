@@ -1,15 +1,17 @@
-package br.com.itau.pj.capital.model.dto;
+package br.com.itau.pj.capital.producer;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class CompanyResponse {
+import java.math.BigDecimal;
+
+public class Company {
     private String cnpj;
 
     @JsonProperty("nome")
     private String name;
 
     @JsonProperty("capital_social")
-    private String nominalCapital;
+    private BigDecimal nominalCapital;
 
     public String getCnpj() {
         return cnpj;
@@ -27,11 +29,11 @@ public class CompanyResponse {
         this.name = name;
     }
 
-    public String getNominalCapital() {
+    public BigDecimal getNominalCapital() {
         return nominalCapital;
     }
 
-    public void setNominalCapital(String nominalCapital) {
+    public void setNominalCapital(BigDecimal nominalCapital) {
         this.nominalCapital = nominalCapital;
     }
 }
