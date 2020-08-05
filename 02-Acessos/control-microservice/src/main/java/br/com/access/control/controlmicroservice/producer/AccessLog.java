@@ -30,4 +30,13 @@ public class AccessLog {
     public void setDoorId(Long doorId) {
         this.doorId = doorId;
     }
+
+    @Override
+    public String toString() {
+        return "AccessLog {" +
+                "accessTime=" + accessTime +
+                ", customerId=" + customerId +
+                ", doorId=" + doorId +
+                '}';
+    }
 }

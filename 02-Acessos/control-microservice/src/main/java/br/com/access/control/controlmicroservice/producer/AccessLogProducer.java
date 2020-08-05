@@ -5,7 +5,7 @@ import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AccessProducer {
+public class AccessLogProducer {
     @Autowired
     private KafkaTemplate<String, AccessLog> producer;
 

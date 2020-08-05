@@ -9,7 +9,7 @@ import br.com.access.control.controlmicroservice.model.Control;
 import br.com.access.control.controlmicroservice.model.Customer;
 import br.com.access.control.controlmicroservice.model.Door;
 import br.com.access.control.controlmicroservice.producer.AccessLoggerMapper;
-import br.com.access.control.controlmicroservice.producer.AccessProducer;
+import br.com.access.control.controlmicroservice.producer.AccessLogProducer;
 import br.com.access.control.controlmicroservice.repository.ControlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -26,7 +26,7 @@ public class ControlService {
     private DoorClient doorClient;
 
     @Autowired
-    private AccessProducer accessProducer;
+    private AccessLogProducer accessProducer;
 
     @Autowired
     private AccessLoggerMapper accessLoggerMapper;
