@@ -1,7 +1,7 @@
 package br.com.access.control.controlmicroservice.service;
 
-import br.com.access.control.controlmicroservice.client.CustomerClient;
-import br.com.access.control.controlmicroservice.client.DoorClient;
+import br.com.access.control.controlmicroservice.client.customer.CustomerClient;
+import br.com.access.control.controlmicroservice.client.door.DoorClient;
 import br.com.access.control.controlmicroservice.exception.ControlNotFoundException;
 import br.com.access.control.controlmicroservice.exception.CustomerNotFoundException;
 import br.com.access.control.controlmicroservice.exception.DoorNotFoundException;
