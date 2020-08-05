@@ -1,14 +1,14 @@
 package br.com.itau.pj.capital.create.service;
 
-import br.com.itau.pj.capital.validate.client.CompanyClient;
-import br.com.itau.pj.capital.validate.producer.CompanyProducer;
-import br.com.itau.pj.capital.validate.exception.CompanyNotFoundException;
-import br.com.itau.pj.capital.validate.producer.Company;
+import br.com.itau.pj.capital.create.client.CompanyClient;
+import br.com.itau.pj.capital.create.exception.CompanyNotFoundException;
+import br.com.itau.pj.capital.producer.Company;
+import br.com.itau.pj.capital.create.producer.CompanyProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class CompanyService {
+public class CompanyCreateService {
     @Autowired
     private CompanyClient companyClient;
 
