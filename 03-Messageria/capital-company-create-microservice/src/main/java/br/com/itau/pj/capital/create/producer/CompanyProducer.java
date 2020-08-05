@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.producer;
+package br.com.itau.pj.capital.create.producer;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.core.KafkaTemplate;

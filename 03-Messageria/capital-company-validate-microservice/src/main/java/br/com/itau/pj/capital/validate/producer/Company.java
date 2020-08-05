@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.producer;
+package br.com.itau.pj.capital.validate.producer;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

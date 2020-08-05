@@ -1,6 +1,6 @@
-package br.com.itau.pj.capital.client;
+package br.com.itau.pj.capital.create.client;
 
-import br.com.itau.pj.capital.producer.Company;
+import br.com.itau.pj.capital.validate.producer.Company;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

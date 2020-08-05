@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.client;
+package br.com.itau.pj.capital.create.client;
 
 import feign.Feign;
 import feign.RetryableException;

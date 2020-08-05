@@ -1,7 +1,7 @@
-package br.com.itau.pj.capital.controller;
+package br.com.itau.pj.capital.create.controller;
 
-import br.com.itau.pj.capital.producer.Company;
-import br.com.itau.pj.capital.service.CompanyService;
+import br.com.itau.pj.capital.validate.service.CompanyService;
+import br.com.itau.pj.capital.validate.producer.Company;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 

@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital;
+package br.com.itau.pj.capital.create;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

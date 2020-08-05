@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital;
+package br.com.itau.pj.capital.validate;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

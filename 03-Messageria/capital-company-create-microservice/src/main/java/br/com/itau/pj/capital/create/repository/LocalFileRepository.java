@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.repository;
+package br.com.itau.pj.capital.create.repository;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;

@@ -1,7 +1,7 @@
-package br.com.itau.pj.capital.client;
+package br.com.itau.pj.capital.create.client;
 
-import br.com.itau.pj.capital.exception.CompanyServiceOfflineException;
-import br.com.itau.pj.capital.producer.Company;
+import br.com.itau.pj.capital.validate.exception.CompanyServiceOfflineException;
+import br.com.itau.pj.capital.validate.producer.Company;
 
 import java.util.Optional;
 

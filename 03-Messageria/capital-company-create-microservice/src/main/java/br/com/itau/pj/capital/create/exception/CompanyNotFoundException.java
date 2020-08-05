@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.exception;
+package br.com.itau.pj.capital.create.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
