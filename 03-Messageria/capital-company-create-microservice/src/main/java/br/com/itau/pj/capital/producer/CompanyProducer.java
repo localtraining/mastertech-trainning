@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.create.producer;
+package br.com.itau.pj.capital.producer;
 
 import br.com.itau.pj.capital.producer.Company;
 import org.springframework.beans.factory.annotation.Autowired;
