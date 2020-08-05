@@ -2,9 +2,7 @@ package br.com.itau.pj.capital.service;
 
 import br.com.itau.pj.capital.client.CompanyClient;
 import br.com.itau.pj.capital.exception.CompanyNotFoundException;
-import br.com.itau.pj.capital.model.CompanyMapper;
-import br.com.itau.pj.capital.model.dto.CompanyRequest;
-import br.com.itau.pj.capital.model.dto.CompanyResponse;
+import br.com.itau.pj.capital.model.dto.Company;
 import br.com.itau.pj.capital.producer.CompanyProducer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -15,18 +13,15 @@ public class CompanyService {
     private CompanyClient companyClient;
 
     @Autowired
-    private CompanyMapper companyMapper;
-
-    @Autowired
     private CompanyProducer companyProducer;
 
-    public CompanyResponse findCompany(String cnpj) {
+    public Company findCompany(String cnpj) {
         return companyClient.getCompany(cnpj).orElseThrow(CompanyNotFoundException::new);
     }
 
-    public CompanyResponse createCompany(CompanyRequest companyRequest) {
-        companyProducer.sendKafkaCreateCompanyMessage(companyRequest);
+    public Company createCompany(Company company) {
+        companyProducer.sendKafkaCreateCompanyMessage(company);
 
-        return companyMapper.fromCompanyRequest(companyRequest);
+        return company;
     }
 }

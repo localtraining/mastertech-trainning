@@ -1,7 +1,6 @@
 package br.com.itau.pj.capital.controller;
 
-import br.com.itau.pj.capital.model.dto.CompanyRequest;
-import br.com.itau.pj.capital.model.dto.CompanyResponse;
+import br.com.itau.pj.capital.model.dto.Company;
 import br.com.itau.pj.capital.service.CompanyService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -14,12 +13,12 @@ public class CompanyController {
     private CompanyService companyService;
 
     @GetMapping("/capital/{cnpj}")
-    public CompanyResponse findCompany(@PathVariable String cnpj) {
+    public Company findCompany(@PathVariable String cnpj) {
         return companyService.findCompany(cnpj);
     }
 
     @PostMapping("/empresa/criar")
-    public void createCompany(@Valid @RequestBody CompanyRequest companyRequest) {
-        companyService.createCompany(companyRequest);
+    public void createCompany(@Valid @RequestBody Company company) {
+        companyService.createCompany(company);
     }
 }
