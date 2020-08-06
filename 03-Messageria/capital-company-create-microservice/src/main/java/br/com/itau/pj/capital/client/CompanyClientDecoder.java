@@ -1,5 +1,6 @@
 package br.com.itau.pj.capital.client;
 
+import br.com.itau.pj.capital.exception.CompanyBusyException;
 import br.com.itau.pj.capital.exception.CompanyNotFoundException;
 import feign.Response;
 import feign.codec.ErrorDecoder;
@@ -18,6 +19,8 @@ public class CompanyClientDecoder implements ErrorDecoder {
 
         if (response.status() == HttpStatus.NOT_FOUND.value()) {
             throw new CompanyNotFoundException();
+        } else if(response.status() == HttpStatus.TOO_MANY_REQUESTS.value()) {
+            throw new CompanyBusyException();
         } else {
             return errorDecoder.decode(s, response);
         }
