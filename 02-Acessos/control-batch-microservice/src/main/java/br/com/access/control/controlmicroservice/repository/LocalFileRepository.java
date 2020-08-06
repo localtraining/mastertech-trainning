@@ -10,6 +10,7 @@ import org.springframework.stereotype.Repository;
 
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Repository
@@ -25,7 +26,7 @@ public class LocalFileRepository {
         CsvMapper csvMapper = new CsvMapper();
         CsvSchema schema = csvMapper.schemaFor(AccessLog.class).withUseHeader(true);
 
-        String file = String.format(FILE_NAME, LocalDateTime.now().toString());
+        String file = String.format(FILE_NAME, LocalDate.now().toString());
 
         csvMapper.writer(schema).writeValue(Paths.get(file).toFile(), accessLogTree);
 
