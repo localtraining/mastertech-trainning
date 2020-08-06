@@ -1,3 +1,1 @@
-rem Please check your containers ids by using below cmd.
-rem cmd: docker container ls -a -f "label=io.confluent.docker"
-docker container stop <containers_ids>
+for /F "usebackq delims=" %A in (`docker container ls -aqf "label=io.confluent.docker"`) do @docker stop %A
