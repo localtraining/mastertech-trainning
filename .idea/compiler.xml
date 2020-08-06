@@ -18,12 +18,14 @@
         <module name="eureka-server" />
         <module name="payment-microservice" />
         <module name="config-server" />
+        <module name="capital-company-batch-microservice" />
         <module name="customer-microservice" />
         <module name="doors-access-microservice" />
         <module name="customers-access-microservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="capital-company-batch-microservice" target="1.8" />
       <module name="capital-company-create-microservice" target="1.8" />
       <module name="capital-company-validate-microservice" target="1.8" />
       <module name="cartoes-monolith" target="1.8" />
@@ -46,6 +48,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="capital-company-batch-microservice" options="-parameters" />
       <module name="capital-company-create-microservice" options="-parameters" />
       <module name="capital-company-validate-microservice" options="-parameters" />
       <module name="cartoes-monolith" options="-parameters" />

@@ -27,6 +27,7 @@
         <option value="$PROJECT_DIR$/03-Messageria/capital-company-validation-microservice/pom.xml" />
         <option value="$PROJECT_DIR$/03-Messageria/capital-company-create-microservice/pom.xml" />
         <option value="$PROJECT_DIR$/03-Messageria/capital-company-validate-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/03-Messageria/capital-company-batch-microservice/pom.xml" />
       </list>
     </option>
   </component>
