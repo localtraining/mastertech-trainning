@@ -24,10 +24,15 @@ public class UsuarioService implements UserDetailsService {
   
   @PostConstruct
   public void popular() {
-    Usuario joseJefferson = new Usuario();
-    joseJefferson.setNome("jose-jefferson");
-    joseJefferson.setSenha(encoder.encode("jose-jefferson123"));
-    repository.save(joseJefferson);
+    Usuario userOne = new Usuario();
+    userOne.setNome("userone");
+    userOne.setSenha(encoder.encode("userone123"));
+    repository.save(userOne);
+
+    Usuario userTwo = new Usuario();
+    userTwo.setNome("usertwo");
+    userTwo.setSenha(encoder.encode("usertwo123"));
+    repository.save(userTwo);
   }
 
   @Override

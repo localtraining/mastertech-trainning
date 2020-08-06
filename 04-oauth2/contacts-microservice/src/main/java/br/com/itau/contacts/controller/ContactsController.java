@@ -1,5 +1,6 @@
 package br.com.itau.contacts.controller;
 
+import br.com.itau.contacts.exception.UnauthorizedException;
 import br.com.itau.contacts.model.Contact;
 import br.com.itau.contacts.service.ContactService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,11 @@ public class ContactsController {
     }
 
     @GetMapping("/{ownerId}")
-    public List<Contact> listByOwnerId(@PathVariable Integer ownerId) {
+    public List<Contact> listByOwnerId(@PathVariable Integer ownerId, @AuthenticationPrincipal Contact contact) {
+        if(ownerId != contact.getOwner()) {
+            throw new UnauthorizedException();
+        }
+
         return contactService.listByOwnerId(ownerId);
     }
 }
