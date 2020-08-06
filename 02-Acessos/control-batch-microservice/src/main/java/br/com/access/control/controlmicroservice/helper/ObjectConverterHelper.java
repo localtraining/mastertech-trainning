@@ -25,7 +25,7 @@ public class ObjectConverterHelper {
 
     private DateTimeFormatter formatter;
 
-    private static final String FILE_NAME = "%s/access_log-%s.csv";
+    private static final String FILE_NAME = "%s/%s-%s.csv";
 
     public ObjectConverterHelper() {
         formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy_HH.mm.ss");
@@ -37,7 +37,7 @@ public class ObjectConverterHelper {
         CsvMapper csvMapper = new CsvMapper();
         CsvSchema schema = csvMapper.schemaFor(AccessLog.class).withUseHeader(true);
 
-        String file = String.format(FILE_NAME, projectConfig.getLocalFilesPath(), formatter.format(LocalDateTime.now()).toString());
+        String file = String.format(FILE_NAME, projectConfig.getLocalFilesPath(), projectConfig.getAccessLogFileName(), formatter.format(LocalDateTime.now()).toString());
 
         File fileToSave = Paths.get(file).toFile();
 
