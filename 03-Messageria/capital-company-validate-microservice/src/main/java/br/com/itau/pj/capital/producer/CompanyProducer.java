@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.validate.producer;
+package br.com.itau.pj.capital.producer;
 
 import org.springframework.stereotype.Service;
 

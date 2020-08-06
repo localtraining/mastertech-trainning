@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.validate;
+package br.com.itau.pj.capital;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
