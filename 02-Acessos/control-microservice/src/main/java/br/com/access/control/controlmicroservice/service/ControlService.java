@@ -8,8 +8,8 @@ import br.com.access.control.controlmicroservice.exception.DoorNotFoundException
 import br.com.access.control.controlmicroservice.model.Control;
 import br.com.access.control.controlmicroservice.model.Customer;
 import br.com.access.control.controlmicroservice.model.Door;
-import br.com.access.control.controlmicroservice.producer.AccessLoggerMapper;
 import br.com.access.control.controlmicroservice.producer.AccessLogProducer;
+import br.com.access.control.controlmicroservice.producer.AccessLoggerMapper;
 import br.com.access.control.controlmicroservice.repository.ControlRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -32,21 +32,17 @@ public class ControlService {
     private AccessLoggerMapper accessLoggerMapper;
 
     public Control get(Long customerId, Long doorId) {
-        Control control = controlRepository.findByCustomerIdAndDoorId(customerId, doorId).orElseThrow(ControlNotFoundException::new);
-
-        accessProducer.sendKafkaLogMessage(accessLoggerMapper.fromControl(control));
-
-        return control;
+        return controlRepository.findByCustomerIdAndDoorId(customerId, doorId).orElseThrow(ControlNotFoundException::new);
     }
 
     public void delete(Long customerId, Long doorId) {
-        Control control = controlRepository.findByCustomerIdAndDoorId(customerId, doorId).orElseThrow(ControlNotFoundException::new);
-
-        controlRepository.delete(control);
+        controlRepository.delete(controlRepository.findByCustomerIdAndDoorId(customerId, doorId).orElseThrow(ControlNotFoundException::new));
     }
 
     public Control grant(Control control) {
-        return controlRepository.save(findCustomerAndDoor(control.getCustomerId(), control.getDoorId()));
+        Control newControl = findCustomerAndDoor(control.getCustomerId(), control.getDoorId());
+        accessProducer.sendKafkaLogMessage(accessLoggerMapper.fromControl(newControl));
+        return controlRepository.save(newControl);
     }
 
     private Control findCustomerAndDoor(Long customerId, Long doorId) {
