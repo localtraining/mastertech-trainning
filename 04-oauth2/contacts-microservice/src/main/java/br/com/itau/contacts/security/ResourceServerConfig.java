@@ -26,7 +26,7 @@ public class ResourceServerConfig extends ResourceServerConfigurerAdapter {
                 Contact contact = new Contact();
 
                 contact.setName(map.get("name").toString());
-                contact.setOwner((Long) map.get("id"));
+                contact.setOwner((Integer) map.get("id"));
 
                 return contact;
             }
