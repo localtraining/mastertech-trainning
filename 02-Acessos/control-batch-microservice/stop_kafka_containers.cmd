@@ -1,0 +1,1 @@
+for /F "usebackq delims=" %A in (`docker container ls -aqf "label=io.confluent.docker"`) do @docker stop %A

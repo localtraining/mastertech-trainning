@@ -13,6 +13,7 @@
         <module name="capital-company-validate-microservice" />
         <module name="zuul-api-gateway" />
         <module name="control-microservice" />
+        <module name="control-batch-microservice" />
         <module name="cartoes-monolith" />
         <module name="capital-company-create-microservice" />
         <module name="eureka-server" />
@@ -32,6 +33,7 @@
       <module name="config" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="consumer" target="1.8" />
+      <module name="control-batch-microservice" target="1.8" />
       <module name="control-microservice" target="1.8" />
       <module name="creditcard-microservice" target="1.8" />
       <module name="creditcard-transactions" target="11" />
@@ -55,6 +57,7 @@
       <module name="config" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="consumer" options="-parameters" />
+      <module name="control-batch-microservice" options="-parameters" />
       <module name="control-microservice" options="-parameters" />
       <module name="creditcard-microservice" options="-parameters" />
       <module name="creditcard-transactions" options="-parameters" />

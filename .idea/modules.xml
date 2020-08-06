@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/03-Messageria/capital-company-validate-microservice/capital-company-validate-microservice.iml" filepath="$PROJECT_DIR$/03-Messageria/capital-company-validate-microservice/capital-company-validate-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/cartoes-monolith/cartoes-monolith.iml" filepath="$PROJECT_DIR$/01-Cartões/cartoes-monolith/cartoes-monolith.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/02-Acessos/control-batch-microservice/control-batch-microservice.iml" filepath="$PROJECT_DIR$/02-Acessos/control-batch-microservice/control-batch-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-Acessos/control-microservice/control-microservice.iml" filepath="$PROJECT_DIR$/02-Acessos/control-microservice/control-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/creditcard-microservice/creditcard-microservice.iml" filepath="$PROJECT_DIR$/01-Cartões/creditcard-microservice/creditcard-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/creditcard-transactions/creditcard-transactions.iml" filepath="$PROJECT_DIR$/01-Cartões/creditcard-transactions/creditcard-transactions.iml" />
