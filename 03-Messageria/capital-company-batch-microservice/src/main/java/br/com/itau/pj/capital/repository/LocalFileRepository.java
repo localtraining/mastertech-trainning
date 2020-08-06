@@ -29,6 +29,6 @@ public class LocalFileRepository {
 
         csvMapper.writer(schema).writeValue(Paths.get(file).toFile(), accessLogTree);
 
-        System.out.print(" +++ File Saved: " + file);
+        System.out.println(" +++ File Saved: " + file);
     }
 }
