@@ -13,7 +13,7 @@ public class ContactService {
     private ContactRepository contactRepository;
 
     public List<Contact> listByOwnerId(Integer ownerId) {
-        return contactRepository.findByOwnerId(ownerId);
+        return contactRepository.findByOwner(ownerId);
     }
 
     public Contact save(Contact contact) {
