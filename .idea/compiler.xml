@@ -12,6 +12,7 @@
         <module name="zuul-api-gatewau" />
         <module name="capital-company-validate-microservice" />
         <module name="zuul-api-gateway" />
+        <module name="authserver" />
         <module name="control-microservice" />
         <module name="control-batch-microservice" />
         <module name="cartoes-monolith" />
@@ -22,17 +23,22 @@
         <module name="capital-company-batch-microservice" />
         <module name="customer-microservice" />
         <module name="doors-access-microservice" />
+        <module name="contacts-microservice" />
+        <module name="carros" />
         <module name="customers-access-microservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="authserver" target="1.8" />
       <module name="capital-company-batch-microservice" target="1.8" />
       <module name="capital-company-create-microservice" target="1.8" />
       <module name="capital-company-validate-microservice" target="1.8" />
+      <module name="carros" target="1.8" />
       <module name="cartoes-monolith" target="1.8" />
       <module name="config" target="1.8" />
       <module name="config-server" target="1.8" />
       <module name="consumer" target="1.8" />
+      <module name="contacts-microservice" target="1.8" />
       <module name="control-batch-microservice" target="1.8" />
       <module name="control-microservice" target="1.8" />
       <module name="creditcard-microservice" target="1.8" />
@@ -50,13 +56,16 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authserver" options="-parameters" />
       <module name="capital-company-batch-microservice" options="-parameters" />
       <module name="capital-company-create-microservice" options="-parameters" />
       <module name="capital-company-validate-microservice" options="-parameters" />
+      <module name="carros" options="-parameters" />
       <module name="cartoes-monolith" options="-parameters" />
       <module name="config" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="consumer" options="-parameters" />
+      <module name="contacts-microservice" options="-parameters" />
       <module name="control-batch-microservice" options="-parameters" />
       <module name="control-microservice" options="-parameters" />
       <module name="creditcard-microservice" options="-parameters" />

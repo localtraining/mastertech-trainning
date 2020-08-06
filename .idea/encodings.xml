@@ -20,6 +20,9 @@
     <file url="file://$PROJECT_DIR$/03-Messageria/capital-company-create-microservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-Messageria/capital-company-create-microservice/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/03-Messageria/capital-company-validate-microservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-oauth2/authserver/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-oauth2/carros/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/04-oauth2/contacts-microservice/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />

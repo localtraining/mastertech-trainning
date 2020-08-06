@@ -29,6 +29,9 @@
         <option value="$PROJECT_DIR$/03-Messageria/capital-company-validate-microservice/pom.xml" />
         <option value="$PROJECT_DIR$/03-Messageria/capital-company-batch-microservice/pom.xml" />
         <option value="$PROJECT_DIR$/02-Acessos/control-batch-microservice/pom.xml" />
+        <option value="$PROJECT_DIR$/04-oauth2/authserver/pom.xml" />
+        <option value="$PROJECT_DIR$/04-oauth2/carros/pom.xml" />
+        <option value="$PROJECT_DIR$/04-oauth2/contacts/pom.xml" />
       </list>
     </option>
   </component>
