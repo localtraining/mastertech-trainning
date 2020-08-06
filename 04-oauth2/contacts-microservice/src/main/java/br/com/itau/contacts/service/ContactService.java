@@ -12,8 +12,8 @@ public class ContactService {
     @Autowired
     private ContactRepository contactRepository;
 
-    public List<Contact> list(Integer ownerId) {
-        return contactRepository.findByOwner(ownerId);
+    public List<Contact> listByOwnerId(Integer ownerId) {
+        return contactRepository.findByOwnerId(ownerId);
     }
 
     public Contact save(Contact contact) {

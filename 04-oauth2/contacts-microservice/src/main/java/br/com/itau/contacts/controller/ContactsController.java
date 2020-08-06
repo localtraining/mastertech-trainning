@@ -23,6 +23,6 @@ public class ContactsController {
 
     @GetMapping("/{ownerId}")
     public List<Contact> listByOwnerId(@PathVariable Integer ownerId) {
-        return contactService.list(ownerId);
+        return contactService.listByOwnerId(ownerId);
     }
 }
