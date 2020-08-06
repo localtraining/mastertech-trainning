@@ -1,6 +1,6 @@
-package br.com.itau.pj.capital.create.client;
+package br.com.itau.pj.capital.client;
 
-import br.com.itau.pj.capital.create.exception.CompanyNotFoundException;
+import br.com.itau.pj.capital.exception.CompanyNotFoundException;
 import feign.Response;
 import feign.codec.ErrorDecoder;
 import org.springframework.http.HttpStatus;

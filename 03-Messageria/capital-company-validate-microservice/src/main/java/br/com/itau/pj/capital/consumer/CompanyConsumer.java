@@ -1,4 +1,4 @@
-package br.com.itau.pj.capital.validate.consumer;
+package br.com.itau.pj.capital.consumer;
 
 import br.com.itau.pj.capital.producer.Company;
 import org.springframework.kafka.annotation.KafkaListener;
