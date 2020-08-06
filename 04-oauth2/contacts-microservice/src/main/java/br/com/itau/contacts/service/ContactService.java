@@ -1,5 +1,6 @@
 package br.com.itau.contacts.service;
 
+import br.com.itau.contacts.exception.EmptyContactListException;
 import br.com.itau.contacts.model.Contact;
 import br.com.itau.contacts.repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ public class ContactService {
     private ContactRepository contactRepository;
 
     public List<Contact> listByOwnerId(Integer ownerId) {
-        return contactRepository.findByOwner(ownerId);
+        return contactRepository.findByOwner(ownerId).orElseThrow(EmptyContactListException::new);
     }
 
     public Contact save(Contact contact) {
