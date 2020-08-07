@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Optional;
 
-@FeignClient(name="creditcard-microservice", configuration = CreditCardClientConfiguration.class)
+@FeignClient(name="creditcard-microservice", configuration = OAuth2FeignConfiguration.class)
 public interface CreditCardClient {
     @GetMapping("/cartao/{id}")
     Optional<CreditCard> findCreditCardCustomerById(@PathVariable Long id);
