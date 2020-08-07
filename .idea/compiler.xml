@@ -14,7 +14,6 @@
         <module name="authserver" />
         <module name="control-microservice" />
         <module name="control-batch-microservice" />
-        <module name="cartoes-monolith" />
         <module name="capital-company-create-microservice" />
         <module name="eureka-server" />
         <module name="payment-microservice" />

@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/Mastertech.iml" filepath="$PROJECT_DIR$/.idea/Mastertech.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-oauth2/authserver/authserver.iml" filepath="$PROJECT_DIR$/04-oauth2/authserver/authserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/03-Messageria/capital-company-batch-microservice/capital-company-batch-microservice.iml" filepath="$PROJECT_DIR$/03-Messageria/capital-company-batch-microservice/capital-company-batch-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/03-Messageria/capital-company-create-microservice/capital-company-create-microservice.iml" filepath="$PROJECT_DIR$/03-Messageria/capital-company-create-microservice/capital-company-create-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/03-Messageria/capital-company-validate-microservice/capital-company-validate-microservice.iml" filepath="$PROJECT_DIR$/03-Messageria/capital-company-validate-microservice/capital-company-validate-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-oauth2/carros/carros.iml" filepath="$PROJECT_DIR$/04-oauth2/carros/carros.iml" />
-      <module fileurl="file://$PROJECT_DIR$/01-Cartões/cartoes-monolith/cartoes-monolith.iml" filepath="$PROJECT_DIR$/01-Cartões/cartoes-monolith/cartoes-monolith.iml" />
       <module fileurl="file://$PROJECT_DIR$/config-server/config-server.iml" filepath="$PROJECT_DIR$/config-server/config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/04-oauth2/contacts-microservice/contacts-microservice.iml" filepath="$PROJECT_DIR$/04-oauth2/contacts-microservice/contacts-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/02-Acessos/control-batch-microservice/control-batch-microservice.iml" filepath="$PROJECT_DIR$/02-Acessos/control-batch-microservice/control-batch-microservice.iml" />
@@ -21,7 +19,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/01-Cartões/payment-microservice/payment-microservice.iml" filepath="$PROJECT_DIR$/01-Cartões/payment-microservice/payment-microservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/Cartões/working-time/working-time.iml" filepath="$PROJECT_DIR$/Cartões/working-time/working-time.iml" />
-      <module fileurl="file://$PROJECT_DIR$/zuul-api-gateway/zuul-api-gatewau.iml" filepath="$PROJECT_DIR$/zuul-api-gateway/zuul-api-gatewau.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-api-gateway/zuul-api-gateway.iml" filepath="$PROJECT_DIR$/zuul-api-gateway/zuul-api-gateway.iml" />
     </modules>
   </component>
 </project>
