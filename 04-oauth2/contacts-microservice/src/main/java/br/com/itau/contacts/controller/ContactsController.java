@@ -10,24 +10,19 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/contato")
 public class ContactsController {
     @Autowired
     private ContactService contactService;
 
-    @PostMapping
+    @PostMapping("/contato")
     public Contact create(@RequestBody Contact newContact, @AuthenticationPrincipal Contact contact) {
         newContact.setOwner(contact.getId());
 
         return contactService.save(contact);
     }
 
-    @GetMapping("/{ownerId}")
-    public List<Contact> listByOwnerId(@PathVariable Integer ownerId, @AuthenticationPrincipal Contact contact) {
-        if(ownerId != contact.getOwner()) {
-            throw new UnauthorizedException();
-        }
-
-        return contactService.listByOwnerId(ownerId);
+    @GetMapping("/contatos")
+    public List<Contact> listByOwnerId(@AuthenticationPrincipal Contact contact) {
+        return contactService.listByOwnerId(contact.getOwner());
     }
 }
