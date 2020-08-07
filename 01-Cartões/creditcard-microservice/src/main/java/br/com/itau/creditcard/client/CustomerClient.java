@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Optional;
 
-@FeignClient(name="customer-microservice", configuration = CustomerClientConfiguration.class)
+@FeignClient(name="customer-microservice", configuration = OAuth2FeignConfiguration.class)
 public interface CustomerClient {
     @GetMapping("/cliente/{id}")
     Optional<Customer> findCustomerById(@PathVariable Long id);
