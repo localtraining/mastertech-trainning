@@ -8,7 +8,7 @@ import io.github.resilience4j.feign.FeignDecorators;
 import io.github.resilience4j.feign.Resilience4jFeign;
 import org.springframework.context.annotation.Bean;
 
-public class CreditCardClientConfiguration {
+public class CreditCardClientConfiguration extends OAuth2FeignConfiguration {
     @Bean
     public ErrorDecoder getErrorDecoder() {
         return new CreditCardClientDecoder();

@@ -1,7 +1,7 @@
 package br.com.itau.creditcardtransactions.service;
 
-import br.com.itau.creditcardtransactions.client.CreditCardCustomerClient;
-import br.com.itau.creditcardtransactions.client.PaymentsClient;
+import br.com.itau.creditcardtransactions.client.customer.CreditCardCustomerClient;
+import br.com.itau.creditcardtransactions.client.payment.PaymentsClient;
 import br.com.itau.creditcardtransactions.exception.CreditCardNotFoundException;
 import br.com.itau.creditcardtransactions.model.Payment;
 import br.com.itau.creditcardtransactions.model.dto.CreditCard;

@@ -1,4 +1,4 @@
-package br.com.itau.creditcardtransactions.client;
+package br.com.itau.creditcardtransactions.client.customer;
 
 import br.com.itau.creditcardtransactions.model.dto.CreditCard;
 import org.springframework.cloud.openfeign.FeignClient;

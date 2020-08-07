@@ -1,4 +1,4 @@
-package br.com.itau.creditcardtransactions.client;
+package br.com.itau.creditcardtransactions.client.payment;
 
 import br.com.itau.creditcardtransactions.model.Payment;
 import br.com.itau.creditcardtransactions.model.dto.CreditCardPayedTransactionsResponse;
