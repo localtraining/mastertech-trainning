@@ -1,0 +1,13 @@
+[Unit] 
+Description=Eureka Server
+
+[Service]
+User=root
+
+WorkingDirectory=/media/temp
+
+ExecStart=/bin/sh /media/temp/start-eureka
+SuccessExitStatus=143
+TimeoutStopSec=10
+Restart=on-failure
+RestartSec=5
